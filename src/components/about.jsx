@@ -14,28 +14,41 @@ const About = () => {
   <h1 className='text-black text-center font-bold text-4xl'>About the club</h1>
 </div>
 <div className='py-10 flex flex-col md:flex-row'>
-  <div className='flex-1  p-2 md:p-0'>
-    <img src={mentor} alt='vipin_sir' style={{ width: '500px', height: '500px' }} />
+  <div className='flex-1 p-2 md:p-0 flex justify-center items-center'>
+    <img src={mentor} alt='vipin_sir' className='w-full max-w-md md:max-w-full h-auto md:rounded-lg' />
   </div>
-  <div className='flex-1 pl-8'>
-    <h1 className='text-white font-bold py-5 text-center text-4xl'>The Spark</h1>
-    <p className='text-white md:text-center p-5'>The club’s story starts when its founder, Mr. Vipin Pavithran, joined Amrita University in 2006 after ten years of experience with the software industry in the US. The readiness to guide and mentor was the spark. His willingness to help and bring out the best in each student who he mentored, provided the fundamentals of what the club is established on. He believes that each student has great potential which is to be brought out, which is now delivered through the club activities.</p>
-    <blockquote className='text-white text-xl md:text-2xl md:text-center p-5'>
-    "I know the value of right guidance at the right time and how it can make a huge impact. This made me want to help any one who needed guidance."
-    </blockquote>
+  <div className='flex-1 pl-8 justify-center items-center'>
+  <h1 className='text-white font-bold p-5 mx-auto text-center  text-4xl'>The Spark</h1>
+  <div className='text-white  p-5 text-center border-b-2 border-white'>
+    <p className='text-md md:text-lg'>
+      The club’s story starts when its founder, Mr. Vipin Pavithran, joined Amrita University in 2006 after ten years of experience with the software industry in the US. The readiness to guide and mentor was the spark. His willingness to help and bring out the best in each student who he mentored, provided the fundamentals of what the club is established on. He believes that each student has great potential which is to be brought out, which is now delivered through the club activities.
+    </p>
   </div>
+  <blockquote className='text-white text-base md:text-xl md:text-center p-5 mt-5'>
+    "I know the value of right guidance at the right time and how it can make a huge impact. This made me want to help anyone who needed guidance."
+  </blockquote>
 </div>
-<div className='py-10 flex flex-col md:flex-row '>
-  <div className='flex-1 '>
-    <h1 className='text-white font-bold py-3 text-center text-4xl'>A Humble Beginning</h1>
-    <p className='text-white  md:text-left p-5 text-md'>In the summer of 2006, he was approached by Abhilash T G, seeking a mentor to participate in the IBM Great Mind Challenge 2006. Soon a team of enthusiasts was formed and rigorous preparation had been initiated. Initially the students were not confident of getting selected, let alone winning; however they were highly motivated and enthusiastic about it. At the same time, Vipin sir was confident in his students as he was certain that his students would come on top.<br /><br />
-      Months passed, with the team working day and night under intense preparation focusing only on their goal. They missed out on their usual college life, and were often mocked by their classmates. In fact, there were instances when nothing went their way and they thought of giving up, but they were motivated and pushed forward by Vipin sir.
-      <br /><br />
-      In the end, they ended up among the Top 5 teams from India, and were invited to Mumbai for the prize distribution ceremony. This was the first national level prize to be won by Amritapuri students.</p>
+
+</div>
+<div className='py-10 flex flex-col md:flex-row'>
+  <div className='flex-1'>
+    <h1 className='text-white font-bold py-3 text-center  text-4xl'>A Humble Beginning</h1>
+    <div className='text-white md:text-left p-5 text-md'>
+      <p className='mb-5'>
+        In the summer of 2006, he was approached by Abhilash T G, seeking a mentor to participate in the IBM Great Mind Challenge 2006. Soon a team of enthusiasts was formed and rigorous preparation had been initiated. Initially, the students were not confident of getting selected, let alone winning; however, they were highly motivated and enthusiastic about it. At the same time, Vipin sir was confident in his students as he was certain that his students would come on top.
+      </p>
+      <p className='mb-5'>
+        Months passed, with the team working day and night under intense preparation focusing only on their goal. They missed out on their usual college life and were often mocked by their classmates. In fact, there were instances when nothing went their way and they thought of giving up, but they were motivated and pushed forward by Vipin sir.
+      </p>
+      <p>
+        In the end, they ended up among the Top 5 teams from India and were invited to Mumbai for the prize distribution ceremony. This was the first national-level prize to be won by Amritapuri students.
+      </p>
+    </div>
   </div>
-  <div className='flex-1 md:pl-8 flex items-center justify-center mt-5' >
-    <img src={ibm} alt='ibm2007' style={{ maxWidth: '100%', height: 'auto' }} />
-  </div>
+  <div className='flex-1 md:pl-8 flex items-center justify-center mt-5'>
+  <img src={ibm} alt='ibm2007' className='max-w-full h-auto md:rounded-lg' />
+</div>
+
 </div>
 <div className='py-10 flex flex-col md:flex-row'>
   <div className='flex-1 mt-[100px]  '>

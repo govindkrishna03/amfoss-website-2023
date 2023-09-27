@@ -1,5 +1,5 @@
 import {BrowserRouter,Routes,Route} from "react-router-dom";
-
+import Club from "./components/lifeatclub";
 import Home from "./components/home";
 import About from "./components/about";
 import Members from "./components/members";
@@ -12,6 +12,8 @@ function App() {
 <Route path="/" element={<Home/>}/>
 <Route path="/about" element={<About/>}/>
 <Route path="/members" element={<Members/>}/>
+<Route path="/lifeinclub" element={<Club/>}/>
+
 
   </Routes>
   </BrowserRouter>

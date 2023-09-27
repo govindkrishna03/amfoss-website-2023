@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react';
 import Navbar from './navbar'
 import Footer from './footer'
 import ashray from '../assets/aashray446.webp'
 import abhijith from '../assets/abhijitramesh.webp'
 const Members = () => {
+    const [searchTerm, setSearchTerm] = useState('');
     const members = [
         { id: 1, name: 'Aashray Katiyar', image: ashray },
         { id: 2, name: 'Abhijith Ramesh', image: abhijith },
@@ -25,25 +26,39 @@ const Members = () => {
         { id: 18, name: 'Manoj S', image: require('../assets/manoj1749.webp') },
         { id: 19, name: 'Pakhi Banchalia', image: require('../assets/Pakhi07.webp') },
         { id: 20, name: 'Pavithra Nair', image: require('../assets/pavithranair.webp') },
-        { id: 21, name: 'Pranavdhar', image: require('../assets/73323807.webp') },
+        { id: 21, name: 'Pranavdhar', image:('') },
         { id: 22, name: 'R.V.Rajagopalan', image: require('../assets/rv602.webp') },
         { id: 23, name: 'Rishav Kumar', image: require('../assets/rishuriya.webp') },
         { id: 24, name: 'Shashank Priyadarshi', image: require('../assets/iamsh4shank.webp') },
-        { id: 25, name: 'Sujith Bolisetty', },
+        { id: 25, name: 'Sujith Bolisetty' ,image: require('../assets/73323807.webp') },
         { id: 26, name: 'Vyshnav Unnikrishnan', image: require('../assets/Vyshnav371.webp') },
         { id: 27, name: 'Yash Arora', image: require('../assets/yasharora102.webp') },
         { id: 28, name: 'Yash Khare', image: require('../assets/yashk2000.webp') },
 
     ];
+    const filteredMembers = members.filter(member =>
+        member.name.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      
 
     return (
         <div className='max-w-screen-xl mx-auto px-4'>
         <Navbar />
         <div className='p-5 bg-yellow-500'>
-            <h1 className='text-black text-center font-bold text-4xl'>Members</h1>
-        </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-20'>
-            {members.map((member) => (
+  <h1 className='text-black text-center font-bold text-4xl'>Members</h1>
+</div>
+<div className='mt-10'>
+    <input
+      type='text'
+      placeholder='Search by name'
+      value={searchTerm}
+      onChange={e => setSearchTerm(e.target.value)}
+      className=' justify-center items-center flex mx-auto p-3 border border-gray-300 rounded'
+    />
+  </div>
+
+  <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-20'>
+  {filteredMembers.map(member => (
                 <div
                     key={member.id}
                     className='shadow-lg rounded-lg overflow-hidden hover:scale-105 duration-300 bg-white text-center'
