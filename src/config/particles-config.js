@@ -9,7 +9,7 @@ const particlesConfig =
       }
     },
     color: {
-      value: "#ac9801"
+      value: "#e1c130"
     },
     shape: {
       type: "circle",
@@ -18,7 +18,7 @@ const particlesConfig =
         color: "#000000"
       },
       polygon: {
-        nb_sides: 3
+        nb_sides: 5
       },
       image: {
         src: "img/github.svg",
@@ -49,7 +49,7 @@ const particlesConfig =
     line_linked: {
       enable: true,
       distance: 150,
-      color: "#ac9801",
+      color: "#e1c130",
       opacity: 0.4,
       width: 1
     },
@@ -109,5 +109,4 @@ const particlesConfig =
   },
   retina_detect: true
 }
-
   export default particlesConfig;

@@ -29,7 +29,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div style={{zIndex:1}}>   <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-1 text-white'>
+      <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-1 text-white' >
       <Link  to="/"><img src={Logo} alt='amfoss logo' style={{ width: '107px', height: '21px' }} /></Link>
       <ul className='hidden md:flex'>
 
@@ -56,8 +56,7 @@ const Navbar = () => {
         <li className='py-6 hover:text-yellow-500 hover:rounded-2xl transition duration-300'><Link to='/lifeinclub'>Life in Club</Link></li>
         
 
-      </ul></div></div>
-
+      </ul></div>
 );
 };  
 

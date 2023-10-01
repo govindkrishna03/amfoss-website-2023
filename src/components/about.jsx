@@ -21,7 +21,7 @@ const About = () => {
   <h1 className='text-white font-bold p-5 mx-auto text-center  text-4xl'>The Spark</h1>
   <div className='text-white  p-5 text-center border-b-2 border-white'>
     <p className='text-md md:text-lg'>
-      The club’s story starts when its founder, Mr. Vipin Pavithran, joined Amrita University in 2006 after ten years of experience with the software industry in the US. The readiness to guide and mentor was the spark. His willingness to help and bring out the best in each student who he mentored, provided the fundamentals of what the club is established on. He believes that each student has great potential which is to be brought out, which is now delivered through the club activities.
+      The club’s story starts when its founder,<b> Mr. Vipin Pavithran</b>, joined Amrita University in 2006 after ten years of experience with the software industry in the US. The readiness to guide and mentor was the spark. His willingness to help and bring out the best in each student who he mentored, provided the fundamentals of what the club is established on. He believes that each student has great potential which is to be brought out, which is now delivered through the club activities.
     </p>
   </div>
   <blockquote className='text-white text-base md:text-xl md:text-center p-5 mt-5'>
